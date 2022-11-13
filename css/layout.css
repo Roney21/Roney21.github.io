@@ -328,6 +328,7 @@ fieldset[disabled] .btn-theme {
   	[Promo Banner]
 ------------------------------------------------------------------*/
 .promo-banner {
+  margin-bottom: -70px;
   text-align: center;
 }
 
