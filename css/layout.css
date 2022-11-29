@@ -259,17 +259,19 @@ fieldset[disabled] .btn-theme {
 }
 
 .btn-default-bg {
-  color: #F2FEDC;
+  color: #b9deed;
   background: #353d27;
   border-color: transparent;
   border-width: 0;
+  border-radius: 15px;
 }
 
 .btn-default-bg:hover, .btn-default-bg:focus, .btn-default-bg.focus {
   color: #515769;
-  background: #F2FEDC;
+  background: transparent;
   transform: scale(1.25);
   border-color: transparent;
+  border-radius: 0px;
 
 }
 
@@ -351,15 +353,14 @@ fieldset[disabled] .btn-theme {
 .promo-block {
   position: relative;
   background: rgb(255,255,255);
-background: radial-gradient(circle, rgba(255,255,255,1) 0%, #F2FEDC 100%);
+  background: linear-gradient(90deg, #b9deed, #efefef);
   padding-top: 220px;
   transition: 0.5s ease-in-out;
-  background-size: 200%
 }
 
 .promo-block:hover, .promo-block-text, .promo-block-title{
 
-  background-size: 500%;
+  background-size: 100%;
 
 
 }
@@ -461,7 +462,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, #F2FEDC 100%);
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 .service:hover{
-  background-color: #F2FEDC;
+  background-color: #d0e9f3;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -547,7 +548,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, #F2FEDC 100%);
 }
 
 .header .navbar-toggle:hover .toggle-icon {
-  background: #CAD473;
+  background: #b9deed;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -556,7 +557,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, #F2FEDC 100%);
 .header .navbar-toggle:hover .toggle-icon:before, .header .navbar-toggle:hover .toggle-icon:after {
   width: 21px;
   height: 1px;
-  background: #CAD473;
+  background: #b9deed;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -653,7 +654,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, #F2FEDC 100%);
   left: 0;
   width: 9px;
   height: 2px;
-  background: #CAD473;
+  background: #b9deed;
   opacity: 0;
   content: " ";
   transition-duration: 400ms;

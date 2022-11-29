@@ -61,9 +61,7 @@
                     <!-- Logo -->
                     <div class="logo">
                         <a class="logo-wrap" href="#body">
-                            <!--  <img class="logo-img" src="img/logo.png" alt="Asentus Logo"> -->
-                            Логотип
-
+                              <img class="logo-img" src="img/ReproductLogo.svg" alt="Asentus Logo" style="transform: scale(0.6); margin-top: -20px;">
                         </a>
                     </div>
                     <!-- End Logo -->
@@ -73,6 +71,7 @@
                 <div class="collapse navbar-collapse nav-collapse">
                     <div class="menu-container">
                         <ul class="nav navbar-nav navbar-nav-right">
+
                             <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
                                     href="#body">Головна</a></li>
                             <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">Про
@@ -101,10 +100,31 @@
                     <div class="margin-b-30">
                         <h1 class="promo-block-title">Акуленко <br /> Ніна Іванівна</h1>
                         <p class="promo-block-text">Приватний гінеколог</p>
-                        <a href="#contact"
-                                class="btn-theme btn-theme-md btn-default-bg text-uppercase">Подзвонити</a>
+                        <a class="btn-theme btn-theme-md btn-default-bg text-uppercase" data-toggle="modal" data-target="#exampleModalCenter">Подзвонити</a>
                     </div>
-                <!--    <ul class="list-inline">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="exampleModalLongTitle">Контактна інформація</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="lead"> Тел. +380676954831</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- End modal-->
+                    <!--    <ul class="list-inline">
                         <li><a href="#" class="social-icons"><i class="icon-social-facebook"></i></a></li>
                         <li><a href="#" class="social-icons"><i class="icon-social-twitter"></i></a></li>
                         <li><a href="#" class="social-icons"><i class="icon-social-dribbble"></i></a></li>
@@ -129,26 +149,42 @@
         <div class="container content-lg">
             <div class="row">
                 <div class="col-sm-5">
-                  <!--  <img class="full-width img-responsive" src="img/500x700/01.jpg" alt="Image"> -->
-                 </div>
+                    <!--  <img class="full-width img-responsive" src="img/500x700/01.jpg" alt="Image"> -->
+                </div>
                 <div>
                     <div class="section-seperator">
                         <div>
                             <div>
-                                <h2 style="">Про мене</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                    qui officia deserunt mollit anim id est laborum.</p>
-                                <h2 style="text-align: center; margin-right: 40px; margin-top: 40px;">Освіта</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                    qui officia deserunt mollit anim id est laborum.</p>
+                                <h2 class="wow fadeInDown"
+                                    style="text-align: center; margin-right: 40px; margin-top: 40px; margin-bottom: 40px;">
+                                    Про мене</h2>
+                                <p class="lead wow fadeInDown" style="color:#515769;">Я працюю в  акушерстві і гінекологіі понад 30 років.
+                                     Це вагомий  запас лікарського досвіду,  теоретичних знань та практичних навичок . А ще - це  любов
+                                      і повага до пацієнта, бажання допомогти порадою, чуйним ставленням та милосердям .</p>
+                                <h2 class="wow fadeInDown"
+                                    style="text-align: center; margin-right: 40px; margin-top: 40px; margin-bottom: 40px;">
+                                    Освіта</h2>
+                                <p class="lead" style="color:#515769;">В 1988 році закінчила Дніпровський державний
+                                    медичний університет – ДДМУ за спеціальністю лікувальна справа.
+                                    Після проходження інтернатури в 1989 році присвоєна кваліфікація лікаря
+                                    акушер-гінеколога.</p>
+                                <h2 class="wow fadeInDown"
+                                    style="text-align: center; margin-right: 40px; margin-top: 40px; margin-bottom: 40px;">
+                                    Післядипломна освіта</h2>
+                                <li class="lead wow fadeInLeft">Школа гінекологічноі ендокринологіі</li>
+                                <li class="lead wow fadeInLeft">Кольпоскопія та рання діагностика фонових і передракових
+                                    захворювань шийки матки.</li>
+                                <li class="lead wow fadeInLeft">Сучасні репродуктивні технології в лікуванні безпліддя.
+                                </li>
+                                <li class="lead wow fadeInLeft">Ультразвукова діагностика в гінекологіі.</li>
+                                <li class="lead wow fadeInLeft">Сучасні підходи до контрацепції та планування сім‘і.
+                                </li>
+                                <li class="lead wow fadeInLeft">Вагітність високого ризику: шляхи вирішення проблеми.
+                                </li>
+                                <li class="lead wow fadeInLeft">Запальні захворювання сечостатевої системи у жінок.
+                                </li>
+                                <li class="lead wow fadeInLeft">Клімактеричний синдром та менопаузальний стан.</li>
+                                <li class="lead wow fadeInLeft">Гінекологія дитячого та підліткового віку та ін.</li>
                             </div>
                         </div>
                     </div>
@@ -184,7 +220,7 @@
     <!-- Experience -->
 
 
-    <!-- Work -->
+    <!-- Work --
     <div id="study">
         <div class="container content-lg">
             <div class="row margin-b-40">
@@ -194,10 +230,10 @@
                         magna aliqua enim minim veniam exercitation</p>
                 </div>
             </div>
-            <!--// end row -->
+            <!--// end row -
 
             <div class="row">
-                <!-- Latest Products -->
+                <!-- Latest Products --
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
                         <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
@@ -209,9 +245,9 @@
                         magna ut consequat siad esqudiat dolor</p>
                     <a class="link" href="#">Більш детальна інформація</a>
                 </div>
-                <!-- End Latest Products -->
+                <!-- End Latest Products -
 
-                <!-- Latest Products -->
+                <!-- Latest Products -
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
                         <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
@@ -223,9 +259,9 @@
                         magna ut consequat siad esqudiat dolor</p>
                     <a class="link" href="#">Більш детальна інформація</a>
                 </div>
-                <!-- End Latest Products -->
+                <!-- End Latest Products -
 
-                <!-- Latest Products -->
+                <!-- Latest Products -
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
                         <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
@@ -237,9 +273,9 @@
                         magna ut consequat siad esqudiat dolor</p>
                     <a class="link" href="#">Більш детальна інформація</a>
                 </div>
-                <!-- End Latest Products -->
+                <!-- End Latest Products -
             </div>
-            <!--// end row -->
+            <!--// end row -
         </div>
     </div>
     <!-- End Work -->
@@ -254,10 +290,10 @@
                     <div class="col-md-3 col-sm-6 md-margin-b-4">
                         <div class="service wow zoomIn" data-height="height">
                             <div class="service-element">
-                                <i class="service-icon icon-mustache"></i>
+                                <i class="bi bi-calendar-heart"></i>
                             </div>
                             <div class="service-info">
-                                <h3>Підтримка військових</h3>
+                                <h3>Консультування</h3>
                                 <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat
                                     dolor</p>
                             </div>
@@ -270,7 +306,7 @@
                                 <i class="service-icon icon-mustache"></i>
                             </div>
                             <div class="service-info">
-                                <h3>Підтримка військових</h3>
+                                <h3>Повний онкопрофогляд</h3>
                                 <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat
                                     dolor</p>
                             </div>
@@ -283,7 +319,7 @@
                                 <i class="service-icon icon-mustache"></i>
                             </div>
                             <div class="service-info">
-                                <h3>Підтримка військових</h3>
+                                <h3>Гінекологічна ендокринологія</h3>
                                 <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat
                                     dolor</p>
                             </div>
@@ -296,7 +332,7 @@
                                 <i class="service-icon icon-mustache"></i>
                             </div>
                             <div class="service-info">
-                                <h3>Підтримка військових</h3>
+                                <h3>Обстеження та лікування безпліддя</h3>
                                 <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat
                                     dolor</p>
                             </div>
@@ -309,7 +345,7 @@
                                 <i class="service-icon icon-screen-tablet"></i>
                             </div>
                             <div class="service-info">
-                                <h3>У онлайн форматі</h3>
+                                <h3>Лікування запальних захворювань</h3>
                                 <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat
                                     dolor</p>
                             </div>
@@ -322,7 +358,7 @@
                                 <i class="service-icon icon-chemistry"></i>
                             </div>
                             <div class="service-info">
-                                <h3>бла-бла-бла</h3>
+                                <h3>Лікування патології шийки матки</h3>
                                 <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat
                                     dolor</p>
                             </div>
@@ -335,7 +371,7 @@
                                 <i class="service-icon icon-badge"></i>
                             </div>
                             <div class="service-info">
-                                <h3>Кваліфікація</h3>
+                                <h3>УЗД</h3>
                                 <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat
                                     dolor</p>
                             </div>
@@ -352,7 +388,7 @@
     <!-- Clients -->
 
 
-        <!-- Left and right controls -->
+    <!-- Left and right controls -->
 
     <!-- End Clients -->
 
@@ -374,13 +410,13 @@
             <div class="container content-lg">
                 <div class="row margin-b-40">
                     <div class="col-sm-6">
-                        <h2>Контакти</h2>
+                        <h2>Контактна інформація</h2>
                     </div>
                 </div>
                 <div class="mapouter">
                     <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
                             marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600
-                            &amp;height=400&amp;hl=en&amp;q=University of Oxford&
+                            &amp;height=400&amp;hl=en&amp;q=Припортова 38&
                             amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
                             href="http://embed-google-maps.com/">embed google map</a></div>
                     <style>
@@ -410,20 +446,13 @@
                 <div class="row">
                     <div class="col-md-3 col-xs-6 md-margin-b-30">
                         <h4>Розташування</h4>
-                        <a href="#">Brookyln, New York</a>
+                        <a href="#">м. Черкаси вул. Припортова 37</a>
                     </div>
                     <div class="col-md-3 col-xs-6 md-margin-b-30">
                         <h4>Телефон</h4>
-                        <a href="#">+77 234 548 00 00</a>
+                        <a href="#">+380676954831</a>
                     </div>
-                    <div class="col-md-3 col-xs-6">
-                        <h4>Email</h4>
-                        <a href="mailto:#">alex.teseira@gmail.com</a>
-                    </div>
-                    <div class="col-md-3 col-xs-6">
-                        <h4>Щось ще</h4>
-                        <a href="#">бла-бла-бла</a>
-                    </div>
+
                 </div>
                 <!--// end row -->
             </div>
