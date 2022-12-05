@@ -22,6 +22,7 @@
     <meta content="" name="author" />
 
     <!-- GLOBAL MANDATORY STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -114,7 +115,10 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <p class="lead"> Тел. +380676954831</p>
+                                    <p class="lead"> <i class="fa fa-address-book" style="padding-right: 20px;"></i>+380676954831 (Моб. тел, Viber, Whatsapp)</p>
+                                    <p class="lead"> <i class="fa fa-send-o" style="padding-right: 20px;"></i>@Nickname</p>
+                                    <span>Дзвінки з 8:00 - 20:00 <br></span>
+                                    <span>По можливості приймаємо дзвінки навіть тоді, коли немає світла!</span>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -161,7 +165,7 @@
                                 <p class="lead wow fadeInDown" style="color:#515769;">Я працюю в  акушерстві і гінекологіі понад 30 років.
                                      Це вагомий  запас лікарського досвіду,  теоретичних знань та практичних навичок . А ще - це  любов
                                       і повага до пацієнта, бажання допомогти порадою, чуйним ставленням та милосердям .</p>
-                                <h2 class="wow fadeInDown"
+                                <h2 class="wow fadeInDown" id="study"
                                     style="text-align: center; margin-right: 40px; margin-top: 40px; margin-bottom: 40px;">
                                     Освіта</h2>
                                 <p class="lead" style="color:#515769;">В 1988 році закінчила Дніпровський державний
@@ -290,7 +294,7 @@
                     <div class="col-md-3 col-sm-6 md-margin-b-4">
                         <div class="service wow zoomIn" data-height="height">
                             <div class="service-element">
-                                <i class="bi bi-calendar-heart"></i>
+                                <i class="repIcon"><img src="img/ReproductICONGRAY.svg" alt="" ></i>
                             </div>
                             <div class="service-info">
                                 <h3>Консультування</h3>
@@ -303,7 +307,7 @@
                     <div class="col-md-3 col-sm-6 md-margin-b-4">
                         <div class="service wow zoomIn" data-height="height">
                             <div class="service-element">
-                                <i class="service-icon icon-mustache"></i>
+                                <i class="repIcon"><img src="img/ReproductICONGRAY.svg" alt="" ></i>
                             </div>
                             <div class="service-info">
                                 <h3>Повний онкопрофогляд</h3>
@@ -316,7 +320,7 @@
                     <div class="col-md-3 col-sm-6 md-margin-b-4">
                         <div class="service wow zoomIn" data-height="height">
                             <div class="service-element">
-                                <i class="service-icon icon-mustache"></i>
+                                <i class="repIcon"><img src="img/ReproductICONGRAY.svg" alt="" ></i>
                             </div>
                             <div class="service-info">
                                 <h3>Гінекологічна ендокринологія</h3>
@@ -329,7 +333,7 @@
                     <div class="col-md-3 col-sm-6 md-margin-b-4">
                         <div class="service wow zoomIn" data-height="height">
                             <div class="service-element">
-                                <i class="service-icon icon-mustache"></i>
+                                <i class="repIcon"><img src="img/ReproductICONGRAY.svg" alt="" ></i>
                             </div>
                             <div class="service-info">
                                 <h3>Обстеження та лікування безпліддя</h3>
@@ -342,7 +346,7 @@
                     <div class="col-sm-4">
                         <div class="service wow zoomIn" data-height="height">
                             <div class="service-element">
-                                <i class="service-icon icon-screen-tablet"></i>
+                                <i class="repIcon"><img src="img/ReproductICONGRAY.svg" alt="" ></i>
                             </div>
                             <div class="service-info">
                                 <h3>Лікування запальних захворювань</h3>
@@ -355,7 +359,7 @@
                     <div class="col-sm-4">
                         <div class="service wow zoomIn" data-height="height">
                             <div class="service-element">
-                                <i class="service-icon icon-chemistry"></i>
+                                <i class="repIcon"><img src="img/ReproductICONGRAY.svg" alt="" ></i>
                             </div>
                             <div class="service-info">
                                 <h3>Лікування патології шийки матки</h3>
@@ -368,7 +372,7 @@
                     <div class="col-sm-4">
                         <div class="service wow zoomIn" data-height="height">
                             <div class="service-element">
-                                <i class="service-icon icon-badge"></i>
+                                <i class="repIcon"><img src="img/ReproductICONGRAY.svg" alt="" ></i>
                             </div>
                             <div class="service-info">
                                 <h3>УЗД</h3>
@@ -410,7 +414,7 @@
             <div class="container content-lg">
                 <div class="row margin-b-40">
                     <div class="col-sm-6">
-                        <h2>Контактна інформація</h2>
+                        <h2 style="padding-top: 20px; padding-bottom: 20px">Контактна інформація</h2>
                     </div>
                 </div>
                 <div class="mapouter">
@@ -452,14 +456,15 @@
                         <h4>Телефон</h4>
                         <a href="#">+380676954831</a>
                     </div>
-                    <div class="col-md-3 col-xs-6 md-margin-b-30">
+                    <div class="col-md-3 col-xs-6 md-margin-b-30" style="float: right">
                         <span>Ліцензія МОЗ України «Медична практика» серія АГ N 599081 видана 14 листопада 2011 року</span>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-xs-6 md-margin-b-30">
                         <span>&copy; Акуленко Ніна Іванівна, приватний гінеколог, Всі права захищені.  <script>document.write(new Date().getFullYear());</script></span>
                     </div>
 
                 </div>
+                
                 <!--// end row -->
             </div>
         </div>
